@@ -7,7 +7,7 @@ def count_primes(n: int) -> int:
         if sieve[i]:
             sieve[i*i : n+1 : i] = [False] * len(range(i*i, n+1, i))
     return sum(sieve)
-
+#
 # Example usage
 if __name__ == "__main__":
     import time
